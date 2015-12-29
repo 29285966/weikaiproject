@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>用户管理</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() { 
+				// 展开按钮
+				$('.btnClick').click(function() {
+					
+					
+						//$('.btn-show').children().removeClass("show");
+						var bool = $(this).hasClass("btn-show");
+						if(bool){
+							
+							$(this).removeClass("btn-show");
+							$(this).addClass("btn-toggle");
+							
+						}else{
+							$('.panel-group').find("a").removeClass("btn-show");
+							$('.panel-group').find("a").addClass("btn-toggle");
+							$(this).removeClass("btn-toggle");
+							$(this).addClass("btn-show");
+						}
+						
+					
+				})
+				
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<div class="logo">
+					<div class="logo-link">
+						<a href="#">
+							<img src="image/icon.png"> 手机版</a>
+						<a href="#">
+							<img src="image/icon.png"> English</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航-->
+		<div class="wrap">
+			<div class="navbar">
+				<ul class="nav">
+					<li><a href="#"><img src="image/icon3.png"> 首页</a>|</li>
+					<li><a href="#">招聘信息</a>|</li>
+					<li><a href="#">求职反馈</a>|</li>
+					<li><a href="#">通知公告</a></li>
+				</ul>
+			</div>
+			<div class="ad">
+				<img src="image/tmp/img1.png"> </div>
+		</div>
+		<div class="wrap">
+			<!--内容-->
+			<div class="contain">
+				<!--左边-->
+				<div class="sidebar">
+					<div class="plate">
+						<div class="plate-title">
+							<h2>加入我们</h2>
+						</div>
+						<ul class="plate-list">
+							<li><a href="#">招聘信息</a>
+							</li>
+							<li><a href="#">求职反馈</a>
+							</li>
+						</ul>
+					</div>
+					<!--通知公告-->
+					<div class="notice">
+						<div class="notice-title">
+							<h2>通知公告</h2>
+						</div>
+						<ul class="notice-list">
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇…… </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总6月份医疗数据汇总6月份医疗数据汇总</a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="mainbar">
+					<!--岗位需求-->
+					<div class="requirement">
+						<ul class="requirement-list">
+							<li>招聘岗位：
+								<select class="select">
+									<option>主任医师</option>
+									<option>副主任医师</option>
+								</select>
+							</li>
+							<li>科室：
+								<select class="select">
+									<option>主任医师</option>
+									<option>副主任医师</option>
+								</select>
+							</li>
+							<li>有效日期：
+								<input type="text" class="input-text">
+							</li>
+                            <li><div class="btn-group"><button type="button" class="btn-default">检索</button></div></li>
+						</ul>
+                        <!--岗位信息-->
+						<div class="requirement-info">
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										  <h4 class="panel-title">
+
+                                            <h3><span>招聘岗位：放射科主任</span></h3>
+
+                                             <p>
+                                              <span>招聘人数：<em>1人</em></span> 
+                                              <span>科室：<em>输血科</em></span> 
+                              <a data-toggle="collapse" class="btn-show btnClick" id="toggle" data-parent="#accordion" href="#collapse1"></a></p>
+
+                                             </h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                                 <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+                                <!--岗位信息-->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse2"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                                 <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+                                <!--岗位信息-->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse3"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                               <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+                                <!--岗位信息-->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse4"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse4" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                                <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+                                <!--岗位信息-->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse5"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse5" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                                 <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+                                <!--岗位信息-->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse6"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse6" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                                <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+                                <!--岗位信息-->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse7"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse7" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                                <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+                                <!--岗位信息-->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse8"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse8" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                                 <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse9"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse9" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                               <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse10"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse10" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                                 <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse11"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse11" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                               <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+
+<h3><span>招聘岗位：放射科主任</span></h3>
+
+<p><span>招聘人数：<em>1人</em></span> <span>科室：<em>输血科</em></span> <a data-toggle="collapse" class="btn-toggle btnClick" id="toggle"  data-parent="#accordion" href="#collapse12"></a></p>
+
+</h4>
+									</div>
+									<div id="collapse12" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><span>学历要求：<em>硕士及以上</em></span> <span>工作经验：<em>五年以上</em></span>
+												<p><span>专业要求：<em>医学影像学</em></span> <span>职称要求：<em>高级</em></span>
+													<p><span>发布日期：<em>2015-05-14</em></span> <span>截止日期：<em>2015-12-31</em></span>
+														<ul class="eligible-list">
+															<li>任职资格：1.医学影像学专业，具有放射医师执业资格。</li>
+															<li>
+																<p>2.主任医师或副主任医师，具有硕士及以上学历（学位），年龄45周岁以下。</p>
+															</li>
+															<li>
+																<p>3.三级甲等医院三年以上工作经历，或二级甲等医院五年以上工作经历。</p>
+															</li>
+														</ul>
+                                              <div class="btn-group">
+                                                      <button type="button" class="apply-btn">立即申请</button>
+                                                 </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <!--分页-->
+                        <div  style="text-align:center; padding:20px 0;">
+                            <div class="pagingbar1">
+                                <cite class="bora"><a>首页</a><a>上一页</a><a class="selected">1</a><a>2</a><a>3</a><a>...</a><a>10</a><a>下一页</a><span>尾页</span></cite>
+                            </div>
+                       </div>
+                        
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--footer-->
+		<div class="footer">
+			<div class="footer-link">
+				<div class="wrap">
+					<ul class="footer-list">
+						<li><a href="#">医院简介</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">科室介绍</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">名医荟萃</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">就医指南</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">网站地图</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footerinfo">
+				<p>河南省洛阳正骨医院 版权所有 Copyright © 2003-2010, All Rights Reserved. 豫ICP备10209990号-1</p>
+				<p>联系地址：洛阳市启明南路82号 联系电话： 0379-63546511 63546525 63546810(中午、晚间:63552222) 相关科室电话请查询就医指南栏目 乘车路线：乘7、9、20、56、58、41路公交车</p>
+				<p>
+					<a href="#">
+						<img src="http://eiv.baidu.com/hmt/icon/21.gif">
+					</a>技术支持：洛阳得翔网络科技有限公司 合作网站：洛阳健康网</p>
+			</div>
+		</div>
+	</body>
+
+</html>

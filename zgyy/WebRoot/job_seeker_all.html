@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<title>报名表</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.btn-show').click(function() {
+					var checkHas = $(this).children().hasClass("btn-toggle");
+					if (checkHas) {
+						$(this).children().removeClass("show");
+						$(this).children().removeClass("btn-toggle");
+						$(this).children().addClass("show");
+					} else {
+						$(this).children().addClass("btn-toggle");
+						$(this).children().removeClass("show");
+					}
+				})
+				
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<div class="logo">
+					<div class="logo-link">
+						<a href="#">
+							<img src="image/icon.png"> 手机版</a>
+						<a href="#">
+							<img src="image/icon.png"> English</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航-->
+		<div class="wrap">
+			<div class="navbar">
+				<ul class="nav">
+					<li><a href="#"> <img src="image/icon3.png"> 首页</a>|</li>
+					<li><a href="#">招聘信息</a>|</li>
+					<li><a href="#">求职反馈</a>|</li>
+					<li><a href="#">通知公告</a></li>
+				</ul>
+			</div>
+			<div class="ad">
+				<img src="image/tmp/img1.png"> </div>
+		</div>
+		<div class="wrap">
+			<!--内容-->
+			<div class="contain">
+				<!--左边-->
+				<div class="sidebar">
+					<div class="plate">
+						<div class="plate-title">
+							<h2>加入我们</h2>
+						</div>
+						<ul class="plate-list">
+							<li><a href="#">招聘信息</a>
+							</li>
+							<li><a href="#">求职反馈</a>
+							</li>
+						</ul>
+					</div>
+					<!--通知公告-->
+					<div class="notice">
+						<div class="notice-title">
+							<h2>通知公告</h2>
+						</div>
+						<ul class="notice-list">
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇…… </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总6月份医疗数据汇总6月份医疗数据汇总</a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="mainbar">
+					<!---->
+					
+                    <div class="master-modle">
+                   <!--报名表预览-->
+                   <div class="regist-form">
+                        <div class="regist-title">
+                             <p>应聘专业：<input type="text"> 研究方向：<input type="text"></p>
+                        </div>
+                        <div class="basic">
+                            <h4>一、申请人基本信息</h4>
+                            <ul class="basic-info" style="width:500px;">
+                                 <li><span>姓名：</span><input type="text" class="input-text" value="吴雪"></li>
+                                  <li><span>性别：</span>
+                                      <select class="select">
+                                            <option>男</option>
+                                            <option>女</option>
+                                        </select>    
+                                 </li>
+                                 <li><span>身高：</span><input type="text" class="input-text" value="175">cm</li>
+                                 <li><span>籍贯：</span><input type="text" class="input-text" value="河南洛阳"></li>
+                                 <li><span>民族：</span><input type="text" class="input-text" value="回族"></li>
+                                 <li><span>职称：</span><input type="text" class="input-text" value="副主任医师"></li>
+                                 <li><span>政治面貌：</span><input type="text" class="input-text" value="中共党员"></li>
+                                 <li><span>身份证号：</span><input type="text" class="input-text" value="410311199806245078"></li>
+                                 <li><span>攻读学位：</span><input type="text" class="input-text" value="硕士研究生"></li>
+                                 <li><span>专业名称：</span><input type="text" class="input-text" value="临床医学"></li>
+                                 <li><span>导师姓名：</span><input type="text" class="input-text" value="李新华"></li>
+                                 <li><span>培养方式：</span><input type="text" class="input-text" value="统筹全日制"></li>
+                                 <li class="lg"><span class="lg-span">医师资格证书编号：</span><input type="text" class="lg-text" value="199836110360102196601010011"></li>
+                                 <li><span>联系电话：</span><input type="text" class="input-text" value="1503838438"></li>
+                                 <li class="lg"><span class="lg-span">配偶工作单位、从事专业：</span><input type="text" class="lg-text" value="机关单位"></li>
+                                 <li><span>出生日期：</span><input type="text" class="input-text" value="1985-02-04"></li>
+                                 <li><span>健康状况：</span><input type="text" class="input-text" value="健康"></li>
+                                 <li><span>电子信箱：</span><input type="text" class="input-text" value="sunsimiao@gmail.com"></li>
+                                 
+                                 <li><span>婚姻状况：</span><input type="text" class="input-text" value="未婚"></li>
+                                 
+                                 <li class="lg"><span>家庭住址：</span><input type="text" class="lg-text" value="河南省洛阳市"></li>
+                                 <div class="clear"></div>
+                              </ul>
+                              <div class="personal-photos">
+                                   <img src="image/img1.jpg">
+                              </div>
+                        </div>
+                        <table border="1" class="table work-experience">
+                               <thead>                        
+                                 <tr class="experience-title">
+                                    <th colspan="5">二、学习及工作经历</th>
+                                 </tr>
+                               </thead>
+                               <tbody>
+                                 <tr>
+                                    <th rowspan="4" width="120">学习经历</th>
+                                    <th width="180">起止时间</th>
+                                    <th width="250">毕业学校</th>
+                                    <th width="250">所学专业</th>
+                                    <th width="250">学位</td>
+                                 </tr>
+                                 <tr>
+                                    <td>1990年6月—2008年7月</td>
+                                    <td>河南科技大学</td>
+                                    <td>中西医结合</td>
+                                    <td>硕士</td>
+                                 </tr>
+                                 <tr>
+                                    <td>1990年6月—2008年7月</td>
+                                    <td>河南科技大学</td>
+                                    <td>中西医结合</td>
+                                    <td>硕士</td>
+                                 </tr>
+                                 <tr>
+                                    <td>1990年6月—2008年7月</td>
+                                    <td>河南科技大学</td>
+                                    <td>中西医结合</td>
+                                    <td>硕士</td>
+                                 </tr>
+                                 <tr>
+                                    <th rowspan="4">工作经历</th>
+                                    <th>起止时间</th>
+                                    <th>工作单位</th>
+                                    <th>从事专业</th>
+                                    <th>职务</th>
+                                 </tr>
+                                 <tr>
+                                    <td>1990年6月—2008年7月</td>
+                                    <td>洛阳正骨医院</td>
+                                    <td>骨科</td>
+                                    <td>主任医师</td>
+                                 </tr>
+                                 <tr>
+                                    <td>1990年6月—2008年7月</td>
+                                    <td>洛阳正骨医院</td>
+                                    <td>骨科</td>
+                                    <td>主任医师</td>
+                                 </tr>
+                                 <tr>
+                                    <td>1990年6月—2008年7月</td>
+                                    <td>洛阳正骨医院</td>
+                                    <td>骨科</td>
+                                    <td>主任医师</td>
+                                 </tr>
+                                 <tr>
+                                    <td>是否同意调剂到其他专业及专业名称</td>
+                                    <td colspan="4">A</td>
+                                 </tr>
+                                 <tr>
+                                    <td>外语能力（语种/级别）</td>
+                                    <td colspan="">英文专业八级</td>
+                                    <td>计算机能力/级别</td>
+                                    <td colspan="2">计算机等级2级</td>
+                                 </tr>
+                                 <tr>
+                                    <td>个人主要业绩</td>
+                                    <td colspan="4">2013年获得国家自然科学奖一等奖</td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="2">学位论文情况</td>
+                                    <td>硕士论文题目</td>
+                                    <td colspan="3">分割技术医学影像学中的应用及临床实践</td>
+                                 </tr>
+                                 <tr>
+                                    <td>博士论文题目</td>
+                                    <td colspan="3">A</td>
+                                 </tr>
+                                 <tr>
+                                    <td colspan="5">
+                                     <p>  个人声明：本人保证所提交信息的真实性、合法性，承担因填写不实而产生的一切后果。</p>
+                                     <p class="pull-right">签名： 吴雪 </p>
+                                    </td>
+                                 </tr>
+                               </tbody>
+                        </table>
+                        <div class="btn-group text-center">
+                             <button type="button" class="btn-default">打印</button>
+                             <button type="button" class="btn-default">确认报名</button>
+                             <button type="button" class="btn-return">返回</button>
+                        </div>
+                   </div>
+              </div>
+			</div>
+		</div>
+	</div>
+
+		<!--footer-->
+		<div class="footer">
+			<div class="footer-link">
+				<div class="wrap">
+					<ul class="footer-list">
+						<li><a href="#">医院简介</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">科室介绍</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">名医荟萃</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">就医指南</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">网站地图</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<div class="footerinfo">
+				<p>河南省洛阳正骨医院 版权所有 Copyright © 2003-2010, All Rights Reserved. 豫ICP备10209990号-1</p>
+				<p>联系地址：洛阳市启明南路82号 联系电话： 0379-63546511 63546525 63546810(中午、晚间:63552222) 相关科室电话请查询就医指南栏目 乘车路线：乘7、9、20、56、58、41路公交车</p>
+		<p>
+					<a href="#">
+						<img src="http://eiv.baidu.com/hmt/icon/21.gif">
+				</a>技术支持：洛阳得翔网络科技有限公司 合作网站：洛阳健康网</p>
+		</div>
+		</div>
+	</body>
+
+</html>

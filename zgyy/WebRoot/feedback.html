@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<title>求职反馈</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.btn-show').click(function() {
+					var checkHas = $(this).children().hasClass("btn-toggle");
+					if (checkHas) {
+						$(this).children().removeClass("show");
+						$(this).children().removeClass("btn-toggle");
+						$(this).children().addClass("show");
+					} else {
+						$(this).children().addClass("btn-toggle");
+						$(this).children().removeClass("show");
+					}
+				})
+				
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<div class="logo">
+					<div class="logo-link">
+						<a href="#">
+							<img src="image/icon.png"> 手机版</a>
+						<a href="#">
+							<img src="image/icon.png"> English</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航-->
+		<div class="wrap">
+			<div class="navbar">
+				<ul class="nav">
+					<li><a href="#"><img src="image/icon3.png"> 首页</a>|</li>
+					<li><a href="#">招聘信息</a>|</li>
+					<li><a href="#">求职反馈</a>|</li>
+					<li><a href="#">通知公告</a></li>
+				</ul>
+			</div>
+			<div class="ad">
+				<img src="image/tmp/img1.png"> </div>
+		</div>
+		<div class="wrap">
+			<!--内容-->
+			<div class="contain">
+				<!--左边-->
+				<div class="sidebar">
+					<div class="plate">
+						<div class="plate-title">
+							<h2>加入我们</h2>
+						</div>
+						<ul class="plate-list">
+							<li><a href="#">招聘信息</a>
+							</li>
+							<li><a href="#">求职反馈</a>
+							</li>
+						</ul>
+					</div>
+					<!--通知公告-->
+					<div class="notice">
+						<div class="notice-title">
+							<h2>通知公告</h2>
+						</div>
+						<ul class="notice-list">
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇…… </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总6月份医疗数据汇总6月份医疗数据汇总</a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+							<li><a href="#">河南省洛阳正骨医院2011年1—6月份医疗数据汇总 </a><em class="time">2015-05-15</em>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="mainbar">
+					<!--登录-->
+					<div class="login">
+						<h3 class="basic-title">求职反馈 </h3>
+						<div class="feedbackinfo">
+                             <table class="table table-bordered">
+                                 <tr>
+                                    <th>序号</th>
+                                    <th>求职岗位</th>
+                                    <th>申请日期</th>
+                                    <th>求职报名表</th>
+                                    <th>状态</th>
+                                 </tr>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>主任医生</td>
+                                    <td>2015-5-15</td>
+                                    <td><a href="#">查看</a></td>
+                                    <td>已提交</td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>护理</td>
+                                    <td>2015-5-15</td>
+                                    <td><a href="#">查看</a></td>
+                                    <td>面试</td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>行政主管</td>
+                                    <td>2015-5-15</td>
+                                    <td><a href="#">查看</a></td>
+                                    <td>不合格</td>
+                                 </tr>
+                                 <tr>
+                                    <td>4</td>
+                                    <td>......</td>
+                                    <td>......</td>
+                                    <td><a href="#">......</a></td>
+                                    <td>......</td>
+                                 </tr>
+                             </table>
+                        </div>
+                        <div class="btn-group">
+                              <button type="button" class="btn btn-default">返回首页</button>
+                         </div>
+					</div>
+			</div>
+			</div>
+		</div>
+
+		<!--footer-->
+		<div class="footer">
+			<div class="footer-link">
+				<div class="wrap">
+					<ul class="footer-list">
+						<li><a href="#">医院简介</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">科室介绍</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">名医荟萃</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">就医指南</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">网站地图</a>
+						</li>
+						<li>|</li>
+						<li><a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footerinfo">
+				<p>河南省洛阳正骨医院 版权所有 Copyright © 2003-2010, All Rights Reserved. 豫ICP备10209990号-1</p>
+				<p>联系地址：洛阳市启明南路82号 联系电话： 0379-63546511 63546525 63546810(中午、晚间:63552222) 相关科室电话请查询就医指南栏目 乘车路线：乘7、9、20、56、58、41路公交车</p>
+				<p>
+					<a href="#">
+						<img src="http://eiv.baidu.com/hmt/icon/21.gif">
+					</a>技术支持：洛阳得翔网络科技有限公司 合作网站：洛阳健康网</p>
+			</div>
+		</div>
+	</body>
+
+</html>
